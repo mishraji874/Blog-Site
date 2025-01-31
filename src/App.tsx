@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
-import { Introduction } from './components/Introduction';
+import { BlogsPage } from './pages/BlogsPage';
+import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
-import { AuthPage } from './pages/AuthPage';
+import { BlogPost } from './pages/BlogPost';
 import { AuthProvider } from './context/AuthContext';
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/login" element={<AuthPage />} />
+              <Route path="/blogs" element={<BlogsPage />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </main>
         </div>

@@ -1,46 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
-import { PenSquare, LogIn, LogOut } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import icon from '../icon.png';
 
 export function Header() {
-  const { user, signOut } = useAuth();
+  const location = useLocation();
+  const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex h-16 items-center">
           <Link to="/" className="font-bold text-xl text-gray-900">
-            Blogs by Aditya Mishra
+            <img src={icon} alt='Icon' className="h-12 w-12"/>
           </Link>
-          
-          <div className="flex items-center gap-4">
-            {user ? (
-              <>
-                <Link
-                  to="/new-post"
-                  className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900"
-                >
-                  <PenSquare size={20} />
-                  <span>Write</span>
-                </Link>
-                <button
-                  onClick={() => signOut()}
-                  className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900"
-                >
-                  <LogOut size={20} />
-                  <span>Sign Out</span>
-                </button>
-              </>
-            ) : (
-              <Link
-                to="/login"
-                className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900"
-              >
-                <LogIn size={20} />
-                <span>Sign In</span>
-              </Link>
-            )}
+          <div className="flex-1 flex justify-center items-center gap-8">
+            <Link
+              to="/"
+              className={`text-m font-medium ${
+                isActive('/') ? 'text-indigo-600' : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/blogs"
+              className={`text-m font-medium ${
+                isActive('/blogs') ? 'text-indigo-600' : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Blogs
+            </Link>
+            <Link
+              to="/about"
+              className={`text-m font-medium ${
+                isActive('/about') ? 'text-indigo-600' : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              About Me
+            </Link>
           </div>
         </div>
       </nav>
