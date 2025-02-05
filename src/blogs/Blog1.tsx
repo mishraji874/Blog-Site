@@ -12,7 +12,7 @@ const BlogPost: React.FC = () => {
         {/* Author and Metadata */}
         <div className="flex items-center text-gray-600 text-sm mb-6">
           <a 
-            href="https://mishraji874eth.on.fleek.co/" 
+            href="https://adityamishra-dev.vercel.app/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="font-semibold text-blue-600 hover:underline"

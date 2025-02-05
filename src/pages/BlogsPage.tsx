@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Blog1 from '../blogs/Blog1';
+import Blog2 from '../blogs/Blog2';
 
 // New blog structure
 export const blogs = [
@@ -11,14 +12,15 @@ export const blogs = [
         image: "https://api.onecodecamp.com/uploads/Courses/image-1709081598339.jpg",
         content: <Blog1 />,
     },
-    /* Previous blog posts (commented out for reference)
+    
     {
-      id: 2,
-      title: "Mastering React Hooks",
-      excerpt: "A deep dive into React Hooks and how they revolutionize state management and side effects in functional components.",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
-      content: `...`
+        id: 2,
+        title: "Networking 101: Understanding the Basics of Modern Connectivity",
+        excerpt: "Learn the essential concepts, terminology, and protocols of networking. This guide covers key fundamentals to help you navigate the world of modern networks.",
+        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+        content: <Blog2 />
     },
+    /* Previous blog posts (commented out for reference)
     {
       id: 3,
       title: "Building Scalable APIs",
