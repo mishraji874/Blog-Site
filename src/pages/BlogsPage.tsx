@@ -17,7 +17,7 @@ export const blogs = [
         id: 2,
         title: "Networking 101: Understanding the Basics of Modern Connectivity",
         excerpt: "Learn the essential concepts, terminology, and protocols of networking. This guide covers key fundamentals to help you navigate the world of modern networks.",
-        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+        image: "https://miro.medium.com/v2/resize:fit:640/format:webp/0*yDZ4O2EsLoVJSdDC.jpeg",
         content: <Blog2 />
     },
     /* Previous blog posts (commented out for reference)
