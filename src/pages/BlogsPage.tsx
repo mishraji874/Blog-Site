@@ -123,6 +123,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Blog1 from '../blogs/Blog1';
 import Blog2 from '../blogs/Blog2';
+import Blog3 from '../blogs/Blog3';
 
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
@@ -145,6 +146,14 @@ export const blogs = [
         excerpt: "Learn the essential concepts, terminology, and protocols of networking. This guide covers key fundamentals to help you navigate the world of modern networks.",
         image: "https://miro.medium.com/v2/resize:fit:640/format:webp/0*yDZ4O2EsLoVJSdDC.jpeg",
         content: <Blog2 />,
+    },
+    {
+        id: 3,
+        title: "Blockchain Technology: A Deep Dive into Decentralization",
+        slug: generateSlug("Blockchain Technology: A Deep Dive into Decentralization"),
+        excerpt: "Explore the fundamental principles, history, and applications of blockchain technology. Learn how decentralization is shaping the future of digital transactions.",
+        image: "https://online.stanford.edu/sites/default/files/inline-images/1600X900-How-does-blockchain-work.jpg",
+        content: <Blog3 />,
     },
 ];
 
