@@ -4,7 +4,7 @@ import Blog1 from '../blogs/Blog1';
 import Blog2 from '../blogs/Blog2';
 import Blog3 from '../blogs/Blog3';
 import Blog4 from '../blogs/Blog4';
-
+import Blog5 from '../blogs/Blog5';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -42,6 +42,14 @@ export const blogs = [
         excerpt: "Explore the essential role of hash functions in Solidity for maintaining data integrity and security in blockchain applications.",
         image: "https://programtheblockchain.com/storage/mapping.png",
         content: <Blog4 />,
+    },
+    {
+        id: 5,
+        title: "Understanding Abstract Contracts in Solidity",
+        slug: generateSlug("Understanding Abstract Contracts in Solidity"),
+        excerpt: "Learn about abstract contracts in Solidity, their purpose, and how they enable code reuse and modular design.",
+        image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fver38tcbzyouua9t55m0.png",
+        content: <Blog5 />,
     },
 ];
 
