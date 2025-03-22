@@ -5,6 +5,7 @@ import Blog2 from '../blogs/Blog2';
 import Blog3 from '../blogs/Blog3';
 import Blog4 from '../blogs/Blog4';
 import Blog5 from '../blogs/Blog5';
+import Blog6 from '../blogs/Blog6';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -51,6 +52,15 @@ export const blogs = [
         image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fver38tcbzyouua9t55m0.png",
         content: <Blog5 />,
     },
+    {
+        id: 6,
+        title: "Discover Account Abstraction ERC-4337: Simplifying Ethereum's User Experience with Innovative Account Models",
+        slug: generateSlug("Discover Account Abstraction ERC-4337: Simplifying Ethereum's User Experience with Innovative Account Models"),
+        excerpt: "Learn about ERC-4337, a groundbreaking standard for account abstraction in Ethereum.",
+        image: "https://developers.moralis.com/wp-content/uploads/2023/10/Ethereum-Art-Image-with-Logo-plus-a-black-text-stating-ERC-4337-768x384.png",
+        content: <Blog6 />,
+    },
+
 ];
 
 export function BlogsPage() {
