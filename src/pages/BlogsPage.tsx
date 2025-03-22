@@ -55,7 +55,7 @@ export const blogs = [
     {
         id: 6,
         title: "Discover Account Abstraction ERC-4337: Simplifying Ethereum's User Experience with Innovative Account Models",
-        slug: generateSlug("Discover Account Abstraction ERC-4337: Simplifying Ethereum's User Experience with Innovative Account Models"),
+        slug: generateSlug("Discover Account Abstraction ERC-4337"),
         excerpt: "Learn about ERC-4337, a groundbreaking standard for account abstraction in Ethereum.",
         image: "https://developers.moralis.com/wp-content/uploads/2023/10/Ethereum-Art-Image-with-Logo-plus-a-black-text-stating-ERC-4337-768x384.png",
         content: <Blog6 />,
