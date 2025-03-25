@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const AccountAbstractionBlog: React.FC = () => {
+    useEffect(() => {
+        document.title = "Discover Account Abstraction ERC-4337 | Aditya Mishra";
+    }, []);
+
     return (
         <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 flex justify-center">
             <div className="max-w-3xl">
@@ -36,7 +40,7 @@ const AccountAbstractionBlog: React.FC = () => {
                 </p>
 
                 {/* className="w-full h-auto rounded-lg mb-6" */}
-                <img src="https://miro.medium.com/v2/resize:fit:750/format:webp/0*xuZbLE56-J1Wch39.png" alt="Ethereum's Complexity Challenge" className="w-full h-auto rounded-lg mb-6" /> 
+                <img src="https://miro.medium.com/v2/resize:fit:750/format:webp/0*xuZbLE56-J1Wch39.png" alt="Ethereum's Complexity Challenge" className="w-full h-auto rounded-lg mb-6" />
 
                 <h2 className="text-3xl font-semibold text-gray-900 mb-3">Ethereum's Complexity Challenge</h2>
                 <p className="text-gray-700 mb-6">
@@ -70,13 +74,13 @@ const AccountAbstractionBlog: React.FC = () => {
                 </p>
                 <ul className="list-disc list-inside text-gray-700 mb-6">
                     <li><strong>Externally Owned Accounts (EOAs):</strong> Controlled by a private key, requiring user interaction through wallets.</li>
-                    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*4CD9YbVsGdKKqQ8W" alt="EOA" className="w-full h-auto rounded-lg mb-6"/>
+                    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*4CD9YbVsGdKKqQ8W" alt="EOA" className="w-full h-auto rounded-lg mb-6" />
                     <li><strong>Smart Contract Accounts (SCAs):</strong> Managed by smart contracts, allowing users to define custom rules for their accounts.</li>
-                    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*aK3VQgijnDCkDrSU" alt="SCA" className="w-full h-auto rounded-lg mb-6"/>
+                    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*aK3VQgijnDCkDrSU" alt="SCA" className="w-full h-auto rounded-lg mb-6" />
                 </ul>
 
                 <h2 className="text-3xl font-semibold text-gray-900 mb-3">Architecture of ERC-4337</h2>
-                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*bivOAIC7gSkNZ0U9" alt="Architecture of ERC-4337" className="w-full h-auto rounded-lg mb-6"/>
+                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*bivOAIC7gSkNZ0U9" alt="Architecture of ERC-4337" className="w-full h-auto rounded-lg mb-6" />
                 <p className="text-gray-700 mb-6">
                     The ERC-4337 structure simplifies the interaction between users, wallets, and the Ethereum network:
                 </p>

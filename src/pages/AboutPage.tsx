@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaGlobe, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Briefcase, GraduationCap, Code, Cpu } from 'lucide-react';
 import profile from '../programming.gif'
@@ -7,6 +7,9 @@ import profile from '../programming.gif'
 // const giphy = "https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif";
 
 export function AboutPage() {
+    useEffect(() => {
+        document.title = "About | Aditya Mishra";
+    }, []);
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}

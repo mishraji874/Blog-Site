@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Newsletter } from '../components/Newsletter';
 import { ChevronRight } from 'lucide-react';
@@ -10,6 +10,9 @@ import giphy from '../giphy.gif';
 // const giphy = "https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif";
 
 export function HomePage() {
+  useEffect(() => {
+    document.title = "Blogs by Aditya Mishra";
+}, []);
   const navigate = useNavigate();
   const latestBlogs = blogs.slice(0, 3);
 

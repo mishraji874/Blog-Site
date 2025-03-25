@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const BlogPost: React.FC = () => {
+  useEffect(() => {
+    document.title = "How to Create a DApp Using Solidity in 20 Minutes | Aditya Mishra";
+  }, []);
+
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 flex justify-center">
       <div className="max-w-3xl">
@@ -8,13 +12,13 @@ const BlogPost: React.FC = () => {
         <h1 className="text-5xl font-bold text-gray-900 mb-4 leading-tight">
           How to Create a DApp Using Solidity in 20 Minutes
         </h1>
-        
+
         {/* Author and Metadata */}
         <div className="flex items-center text-gray-600 text-sm mb-6">
-          <a 
-            href="https://adityamishra-dev.vercel.app/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://adityamishra-dev.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-semibold text-blue-600 hover:underline"
           >
             Aditya Mishra

@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const HashFunctionsBlog: React.FC = () => {
+    useEffect(() => {
+        document.title = "Understanding Hash Functions in Solidity: A Deep Dive into Data Integrity and Security | Aditya Mishra";
+    }, []);
+
     return (
         <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 flex justify-center">
             <div className="max-w-3xl">
