@@ -7,6 +7,7 @@ import Blog4 from '../blogs/Blog4';
 import Blog5 from '../blogs/Blog5';
 import Blog6 from '../blogs/Blog6';
 import Blog7 from '../blogs/Blog7';
+import Blog8 from '../blogs/Blog8';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -69,6 +70,14 @@ export const blogs = [
         image: "https://coin.space/bassets/images/eq664tlUmR-716.webp",
         content: <Blog7 />,
     },
+    {
+        id: 7,
+        title: "Difference between Popular NFT Standards: ERC-721, ERC-721A, and ERC-1155",
+        slug: generateSlug("Difference between Popular NFT Standards"),
+        excerpt: "Learn what is the difference between the different NFT standards.",
+        image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*N_cmuYlNfWgbV0sp1cKYVw.png",
+        content: <Blog8 />,
+    }
 
 ];
 
