@@ -8,6 +8,7 @@ import Blog5 from '../blogs/Blog5';
 import Blog6 from '../blogs/Blog6';
 import Blog7 from '../blogs/Blog7';
 import Blog8 from '../blogs/Blog8';
+import Blog9 from '../blogs/Blog9';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -71,12 +72,20 @@ export const blogs = [
         content: <Blog7 />,
     },
     {
-        id: 7,
+        id: 8,
         title: "Difference between Popular NFT Standards: ERC-721, ERC-721A, and ERC-1155",
         slug: generateSlug("Difference between Popular NFT Standards"),
         excerpt: "Learn what is the difference between the different NFT standards.",
         image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*N_cmuYlNfWgbV0sp1cKYVw.png",
         content: <Blog8 />,
+    },
+    {
+        id: 9,
+        title: "Guide to Sharding Private Keys for Enhanced Security",
+        slug: generateSlug("Guide to Sharding Private Keys for Enhanced Security"),
+        excerpt: "Learn how private key sharding works.",
+        image: "https://cdn-ilaimmf.nitrocdn.com/HwuKmSkzAdeInVFRkpeYovWxaTlnjAGn/assets/images/optimized/rev-b8ffd1e/www.liminalcustody.com/wp-content/uploads/2024/01/Key-Sharding-Future-of-Crypto-Security-1536x971.webp",
+        content: <Blog9 />,
     }
 
 ];
