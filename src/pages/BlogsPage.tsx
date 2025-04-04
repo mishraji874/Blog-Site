@@ -9,6 +9,7 @@ import Blog6 from '../blogs/Blog6';
 import Blog7 from '../blogs/Blog7';
 import Blog8 from '../blogs/Blog8';
 import Blog9 from '../blogs/Blog9';
+import Blog10 from '../blogs/Blog10';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -86,8 +87,15 @@ export const blogs = [
         excerpt: "Learn how private key sharding works.",
         image: "https://cdn-ilaimmf.nitrocdn.com/HwuKmSkzAdeInVFRkpeYovWxaTlnjAGn/assets/images/optimized/rev-b8ffd1e/www.liminalcustody.com/wp-content/uploads/2024/01/Key-Sharding-Future-of-Crypto-Security-1536x971.webp",
         content: <Blog9 />,
+    },
+    {
+        id: 10,
+        title: "Understanding CREATE, CREATE2, and CREATE3 in Solidity",
+        slug: generateSlug("Understanding CREATE, CREATE2, and CREATE3 in Solidity"),
+        excerpt: "Explore the evolution of smart contract deployment with CREATE, CREATE2, and CREATE3.",
+        image: "https://miro.medium.com/v2/resize:fit:1200/1*0I2grrfGZJfw1pHvi6IX8g.png",
+        content: <Blog10 />,
     }
-
 ];
 
 export function BlogsPage() {
