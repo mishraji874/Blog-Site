@@ -10,6 +10,7 @@ import Blog7 from '../blogs/Blog7';
 import Blog8 from '../blogs/Blog8';
 import Blog9 from '../blogs/Blog9';
 import Blog10 from '../blogs/Blog10';
+import Blog11 from '../blogs/Blog11';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -95,6 +96,14 @@ export const blogs = [
         excerpt: "Explore the evolution of smart contract deployment with CREATE, CREATE2, and CREATE3.",
         image: "https://miro.medium.com/v2/resize:fit:1200/1*0I2grrfGZJfw1pHvi6IX8g.png",
         content: <Blog10 />,
+    },
+    {
+        id: 11,
+        title: "From Blocks to Chains: Building Your First Blockchain in Python",
+        slug: generateSlug("Building Your First Blockchain in Python"),
+        excerpt: "Learn how to build a blockchain from scratch using Python and understand its core concepts.",
+        image: "https://cdn.activestate.com/wp-content/uploads/2020/02/BuildaBlockchainWithPython.png",
+        content: <Blog11 />,
     }
 ];
 
