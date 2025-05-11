@@ -12,6 +12,7 @@ import Blog9 from '../blogs/Blog9';
 import Blog10 from '../blogs/Blog10';
 import Blog11 from '../blogs/Blog11';
 import Blog12 from '../blogs/Blog12';
+import Blog13 from '../blogs/Blog13';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -113,6 +114,14 @@ export const blogs = [
         excerpt: "Explore how fuzzing can help secure Layer 1 protocols and smart contracts in blockchain systems.",
         image: "https://wp.hacken.io/wp-content/uploads/2023/06/Blockchain-Fuzzing.jpg",
         content: <Blog12 />,
+    },
+    {
+        id: 13,
+        title: "Safeguarding Solidity's ecrecover Against Signature Malleability",
+        slug: generateSlug("Safeguarding Solidity's ecrecover Against Signature Malleability"),
+        excerpt: "Learn how to secure Ethereum's ecrecover function against signature malleability attacks using OpenZeppelin's ECDSA library.",
+        image: "https://miro.medium.com/v2/resize:fit:728/1*MVc6Bwoj5LWsZ-5xBnnkEw.png",
+        content: <Blog13 />,
     }
 ];
 
