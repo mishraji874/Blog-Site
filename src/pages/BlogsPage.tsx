@@ -13,6 +13,7 @@ import Blog10 from '../blogs/Blog10';
 import Blog11 from '../blogs/Blog11';
 import Blog12 from '../blogs/Blog12';
 import Blog13 from '../blogs/Blog13';
+import Blog14 from '../blogs/Blog14';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -122,6 +123,14 @@ export const blogs = [
         excerpt: "Learn how to secure Ethereum's ecrecover function against signature malleability attacks using OpenZeppelin's ECDSA library.",
         image: "https://miro.medium.com/v2/resize:fit:728/1*MVc6Bwoj5LWsZ-5xBnnkEw.png",
         content: <Blog13 />,
+    },
+    {
+        id: 14,
+        title: "Understanding getProgramAccounts RPC Method using TypeScript",
+        slug: generateSlug("Understanding getProgramAccounts RPC Method Using TypeScript"),
+        excerpt: "Learn how to use the getProgramAccounts RPC method using TypeScript to query accounts owned by a program on Solana.",
+        image: "https://miro.medium.com/v2/resize:fit:1358/1*YOIQtfgKs4J4u6tvgYwLTQ.jpeg",
+        content: <Blog14 />,
     }
 ];
 
