@@ -14,6 +14,7 @@ import Blog11 from '../blogs/Blog11';
 import Blog12 from '../blogs/Blog12';
 import Blog13 from '../blogs/Blog13';
 import Blog14 from '../blogs/Blog14';
+import Blog15 from '../blogs/Blog15';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -131,6 +132,14 @@ export const blogs = [
         excerpt: "Learn how to use the getProgramAccounts RPC method using TypeScript to query accounts owned by a program on Solana.",
         image: "https://miro.medium.com/v2/resize:fit:1358/1*YOIQtfgKs4J4u6tvgYwLTQ.jpeg",
         content: <Blog14 />,
+    },
+    {
+        id: 15,
+        title: "A Deep Dive into EIP-1271",
+        slug: generateSlug("A Deep Dive into EIP-1271"),
+        excerpt: "Learn about the vulnerabilities in EIP-1271, including signature replay attacks, and how to mitigate them effectively.",
+        image: "https://celebrated-gift-f83e5c9419.media.strapiapp.com/EIP_1272_e65792851d.png",
+        content: <Blog15 />,
     }
 ];
 
