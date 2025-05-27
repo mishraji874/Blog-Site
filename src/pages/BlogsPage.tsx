@@ -15,6 +15,7 @@ import Blog12 from '../blogs/Blog12';
 import Blog13 from '../blogs/Blog13';
 import Blog14 from '../blogs/Blog14';
 import Blog15 from '../blogs/Blog15';
+import Blog16 from '../blogs/Blog16';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -140,7 +141,15 @@ export const blogs = [
         excerpt: "Learn about the vulnerabilities in EIP-1271, including signature replay attacks, and how to mitigate them effectively.",
         image: "https://celebrated-gift-f83e5c9419.media.strapiapp.com/EIP_1272_e65792851d.png",
         content: <Blog15 />,
-    }
+    },
+    {
+        id: 16,
+        title: "Understanding Flash Loan Attacks",
+        slug: generateSlug("Understanding Flash Loan Attacks"),
+        excerpt: "Explore how flash loans work in DeFi, their potential for exploitation in governance systems, and strategies to mitigate these attacks.",
+        image: "https://lh6.googleusercontent.com/ONsCHP1R5vVNvfUiGvsyRNNhzd5CjXirp4lCrQPIhx4A3lXAq54mXYE1ik0pzFyc4wunchhEZKi5SHAZ6TAx7w3irhqDkB1fp_ZMjFLIOFEX_lWjfZMllUE08wlVuFwqfYnOA9HY",
+        content: <Blog16 />,
+    },
 ];
 
 export function BlogsPage() {
