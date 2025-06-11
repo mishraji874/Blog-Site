@@ -16,6 +16,7 @@ import Blog13 from '../blogs/Blog13';
 import Blog14 from '../blogs/Blog14';
 import Blog15 from '../blogs/Blog15';
 import Blog16 from '../blogs/Blog16';
+import Blog17 from '../blogs/Blog17';
 // Function to generate a slug from the title
 const generateSlug = (title: string) =>
     title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -150,6 +151,14 @@ export const blogs = [
         image: "https://lh6.googleusercontent.com/ONsCHP1R5vVNvfUiGvsyRNNhzd5CjXirp4lCrQPIhx4A3lXAq54mXYE1ik0pzFyc4wunchhEZKi5SHAZ6TAx7w3irhqDkB1fp_ZMjFLIOFEX_lWjfZMllUE08wlVuFwqfYnOA9HY",
         content: <Blog16 />,
     },
+    {
+        id: 17,
+        title: "EIP-7528: Standardizing ETH Handling in EVM",
+        slug: generateSlug("EIP-7528: Standardizing ETH Handling in EVM"),
+        excerpt: "Discover how EIP-7528 proposes a unified method to treat ETH like ERC-20 tokens using a pseudo address, improving interoperability and gas efficiency.",
+        image: "https://images.ctfassets.net/jg6lo9a2ukvr/3gIYYnKw1b3Z7sQQU7vSbn/343bea07d968af4e9628972b35b144bb/Blog_Header_-_NFT_Royalty_Standard.png?fm=webp", // You can replace this with a more relevant or custom image if needed
+        content: <Blog17 />,
+    }
 ];
 
 export function BlogsPage() {
